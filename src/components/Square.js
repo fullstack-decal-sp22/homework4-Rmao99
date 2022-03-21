@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles/Square.css';
 
-function Square() {
+function Square(props) {
+    //const [val, setVal] = useState(null);
     return (
-        <button className="square">
-            {/* TODO */}
+        //<button className="square" onClick={() => setVal("X")}> 
+        <button className="square" onClick={props.onClick}> 
+            {props.val}
         </button>
     )
 }
